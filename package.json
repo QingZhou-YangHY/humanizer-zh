@@ -1,0 +1,33 @@
+{
+  "name": "humanizer-zh",
+  "version": "0.1.0",
+  "description": "中文版 humanizer：去掉 AI 写作痕迹的 Agent Skill。",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "agent-skills",
+    "skill",
+    "humanizer",
+    "chinese"
+  ],
+  "files": [
+    "skills/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "THIRD_PARTY_LICENSES.md"
+  ],
+  "pi": {
+    "skills": [
+      "./skills"
+    ]
+  },
+  "scripts": {
+    "check": "python3 tools/check_skill.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QingZhou-YangHY/humanizer-zh.git"
+  },
+  "private": true
+}
