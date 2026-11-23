@@ -43,7 +43,7 @@ git tag -a v0.1.1 -m "v0.1.1: …"
 git push origin main --follow-tags
 ```
 
-仓库没发 npm，两种锁版本的方式：`pi install git:...@v0.1.1` 按 tag 锁，`npx skills add` 按 `skills-lock.json` 里记的 commit 锁。推代码前在本地跑一遍 `npm run check`，仓库里没有 CI。
+仓库没发 npm，两种锁版本的方式：`pi install git:...@v0.1.1` 按 tag 锁，`npx skills add` 按 `skills-lock.json` 里记的 commit 锁。推代码前先跑一遍 `npm run check`，PR 上也会跑（`.github/workflows/check.yml`，Python 3.12 和 3.13）。
 
 版本怎么定：
 
