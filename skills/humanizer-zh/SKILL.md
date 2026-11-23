@@ -6,7 +6,7 @@ description: |
   聊天机器人残留、重讲读者已知的背景。译文对应 humanizer 3.1.0。
 license: MIT
 metadata:
-  version: "0.1.1"
+  version: "0.1.2"
   upstream: humanizer 3.1.0 (MIT)
 ---
 
@@ -228,6 +228,13 @@ metadata:
 **改后**：
 > 索马里菜里也有骆驼肉，当地人把它当珍馐。意面是意大利殖民时期传进来的，现在仍然常见，尤其在南部。
 
+**另两种中文用词毛病**：一是把英文术语按字面硬译，in-flight 写成"在飞"，leverage 写成"杠杆化地使用"，读者得先反推出原文才看得懂。二是一句话里夹英文碎词，"这个 feature 的 latency 有点长"。有公认中文说法的用中文，没有的保留英文原词，第一次出现时一句解释带过，不要两种语言的碎词混排。
+
+**改前**：
+> 窗口深度默认 4，满窗时回收已完成的决策，再决定要不要等在飞的那一个。
+**改后**：
+> 同一时刻最多处理 4 个决策；达到上限时先把已完成的收走，再决定要不要等最老的那个。
+
 ### 13. 抬高重要性
 
 **看什么**：stands as a testament、a pivotal or crucial moment、plays a key role、marking or shaping the、underscores its importance、reflects a broader、enduring or lasting legacy、setting the stage for、evolving landscape、indelible mark；Despite these challenges... continues to thrive、Challenges and Legacy、Future Outlook、Awards and recognition；the future looks bright、exciting times ahead、a step in the right direction。中文对应"印证了"、"具有里程碑意义"、"发挥了关键作用"、"为……奠定基础"、"未来可期"。
@@ -335,11 +342,15 @@ metadata:
 ### 21. 弯引号
 
 **看什么**：英文本该用直引号的地方出现了弯引号；同一篇里中文引号、直角引号和英文引号混着用，或者半角全角标点混排。
-**问题**：多数编辑器会把直引号自动换成弯引号，所以英文那半算*弱信号*，单独出现时不必改。中文正文不受这条影响，中文排版本来就用“”，不要改成直引号。中文要改的是混用：选定一套引号，全篇统一。
+**问题**：多数编辑器会把直引号自动换成弯引号，所以英文那半算*弱信号*，单独出现时不必改。中文正文不受这条影响，本来就用“”，不要改成直引号。中文标点用全角，引号统一用“”，嵌套用‘’，不混用直角引号「」『』；直引号只留给英文和代码。中文要改的是混用：选定一套引号，全篇统一。
 **改前（英文）**：
 > He said “the project is on track,” but others disagreed.
 **改后**：
 > He said "the project is on track," but others disagreed.
+**改前（中文直角引号）**：
+> 他说「这个方案先不急着上」，理由是数据还没对齐。
+**改后**：
+> 他说“这个方案先不急着上”，理由是数据还没对齐。
 
 ## E. 聊天与草稿的残留
 
@@ -424,7 +435,7 @@ metadata:
 - 矛盾的情绪和没解决的紧张："我觉得这大体是好的，但它让我不舒服，我说不清为什么。"
 - 有年代感的引用：只属于某一年、某个亚文化的俚语、梗、内部玩笑。
 - 作者能解释的第一人称选择。
-- 真实的题外话、插入语、自我更正："（我老想说『几乎』，但真的没有任何例外。）"
+- 真实的题外话、插入语、自我更正："（我老想说‘几乎’，但真的没有任何例外。）"
 
 ## 来源
 
