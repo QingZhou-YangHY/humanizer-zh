@@ -17,7 +17,7 @@ npx skills add QingZhou-YangHY/humanizer-zh --skill humanizer-zh
 想锁具体版本，或者装进 Pi 自己的包管理：
 
 ```bash
-pi install git:github.com/QingZhou-YangHY/humanizer-zh@v0.1.0
+pi install git:github.com/QingZhou-YangHY/humanizer-zh@v0.1.2
 ```
 
 本地调试，把 skill 目录链进发现路径：
@@ -39,11 +39,11 @@ npm run check    # 校验 frontmatter、版本一致性、A–F 分组与 1–26
 发版就是一个 tag：
 
 ```bash
-git tag -a v0.1.1 -m "v0.1.1: …"
+git tag -a v0.1.2 -m "v0.1.2: …"
 git push origin main --follow-tags
 ```
 
-仓库没发 npm，两种锁版本的方式：`pi install git:...@v0.1.1` 按 tag 锁，`npx skills add` 按 `skills-lock.json` 里记的 commit 锁。推代码前先跑一遍 `npm run check`，PR 上也会跑（`.github/workflows/check.yml`，Python 3.12 和 3.13）。
+仓库没发 npm，两种锁版本的方式：`pi install git:...@v0.1.2` 按 tag 锁，`npx skills add` 按 `skills-lock.json` 里记的 commit 锁。推代码前先跑一遍 `npm run check`，PR 上也会跑（`.github/workflows/check.yml`，Python 3.12 和 3.13）。
 
 版本怎么定：
 

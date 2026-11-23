@@ -1,6 +1,6 @@
 {
   "name": "humanizer-zh",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "中文版 humanizer：去掉 AI 写作痕迹的 Agent Skill。",
   "license": "MIT",
   "keywords": [
